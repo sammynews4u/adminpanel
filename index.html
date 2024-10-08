@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Admin Panel</h2>
+        <ul>
+            <li><a href="#"><i class="fas fa-home"></i> Dashboard</a></li>
+            <li><a href="#"><i class="fas fa-user"></i> Users</a></li>
+            <li><a href="#"><i class="fas fa-chart-line"></i> Analytics</a></li>
+            <li><a href="#"><i class="fas fa-cogs"></i> Settings</a></li>
+            <li><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h2>Dashboard Overview</h2>
+            <div class="user-wrapper">
+                <img src="profile.jpg" alt="User profile">
+                <div>
+                    <h4>Admin</h4>
+                    <small>Admin Role</small>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-info">
+                        <h3>Users</h3>
+                        <p>120</p>
+                    </div>
+                    <div class="icon-wrapper">
+                        <i class="fas fa-users"></i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-info">
+                        <h3>Revenue</h3>
+                        <p>$25,000</p>
+                    </div>
+                    <div class="icon-wrapper">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-info">
+                        <h3>Orders</h3>
+                        <p>350</p>
+                    </div>
+                    <div class="icon-wrapper">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-info">
+                        <h3>Support Requests</h3>
+                        <p>15</p>
+                    </div>
+                    <div class="icon-wrapper">
+                        <i class="fas fa-life-ring"></i>
+                    </div>
+                </div>
+            </div>
+
+            <section class="charts-section">
+                <div class="chart">
+                    <h3>Website Traffic</h3>
+                    <canvas id="trafficChart"></canvas>
+                </div>
+
+                <div class="chart">
+                    <h3>User Growth</h3>
+                    <canvas id="userChart"></canvas>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
